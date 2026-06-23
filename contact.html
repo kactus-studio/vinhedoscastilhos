@@ -206,11 +206,13 @@
                 <div class="col-lg-6 offset-lg-1 col-md-6 col-sm-7">
                     <div class="contact__form">
                         <h2>Entre em contato</h2>
-                        <form action="https://formsubmit.co/vinhedoscastilhos@gmail.com" method="POST">
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="fd992dc3-d909-4b24-92e0-3bf9205262c6">
                             <input type="hidden" name="_subject" value="Contato Site">
-                            <input type="text" placeholder="Seu nome">
-                            <input type="email" placeholder="Email">
-                            <textarea placeholder="Sua mensagem"></textarea>
+                            <input type="text" placeholder="Seu nome" required>
+                            <input type="email" placeholder="Email" required>
+                            <textarea placeholder="Sua mensagem" required></textarea>
+                            <div class="h-captcha" data-captcha="true"></div>
                             <button type="submit">Enviar mensagem</button>
                         </form>
                     </div>
@@ -219,6 +221,8 @@
         </div>
     </section>
     <!-- Contact Section End -->
+
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 
     <!-- Footer Section Begin -->
     <footer class="footer set-bg" data-setbg="img/footer-bg.jpg">
